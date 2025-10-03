@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dr. Priti Swaraj — Archaeologist · Researcher · Author</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+  <style>
+    :root{
+      --bg:#ffffff; --card:#f8f9fb; --accent1:#a16207; --accent2:#0ea5a4; --muted:#333; --glass: rgba(0,0,0,0.04);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:'Nunito',system-ui,Arial,sans-serif;background:#fff;color:#222}
+    a{color:var(--accent2);text-decoration:none}
+    .container{max-width:1100px;margin:36px auto;padding:24px}
+
+    /* Header / Hero */
+    header{display:flex;gap:24px;align-items:center}
+    .hero-left{flex:1}
+    h1{font-size:clamp(26px,4.6vw,44px);margin:0 0 6px;font-weight:800;letter-spacing:0.4px}
+    .roles{font-weight:600;color:var(--accent1);margin-bottom:14px}
+    p.lead{color:#444;margin:0 0 18px;line-height:1.5}
+    .cta{display:flex;gap:10px}
+    .btn{background:linear-gradient(90deg,var(--accent2),#38bdf8);border:none;padding:10px 14px;border-radius:10px;color:#fff;font-weight:700;cursor:pointer;box-shadow:0 6px 20px rgba(14,165,164,0.12);transition:transform .18s ease}
+    .btn.secondary{background:transparent;border:1px solid #0ea5a4;color:var(--accent2)}
+    .btn:hover{transform:translateY(-4px)}
+
+    /* About and grid */
+    main{display:grid;grid-template-columns:1fr;gap:22px;margin-top:26px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.08);border:1px solid #eee}
+    .two-col{display:grid;grid-template-columns:1fr 340px;gap:18px}
+
+    .meta{font-size:14px;color:#666;margin-bottom:8px}
+    ul.clean{padding-left:18px;margin:8px 0 0;color:#444}
+    ul.clean li{margin:6px 0}
+
+    /* Academic works */
+    .works-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+    .work{background:#fff;padding:12px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
+    .work h4{margin:0 0 6px;font-size:15px}
+    .work p{margin:0;color:#555;font-size:14px}
+
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}
+    .gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px;cursor:pointer;transition:transform .22s ease,box-shadow .22s ease}
+    .gallery img:hover{transform:scale(1.03);box-shadow:0 10px 30px rgba(0,0,0,0.2)}
+
+    /* modal */
+    .modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,0.7);z-index:999}
+    .modal.open{display:flex}
+    .modal img{max-width:90%;max-height:80%;border-radius:8px}
+
+    footer{display:flex;justify-content:space-between;align-items:center;padding:14px 0;color:#666}
+
+    /* responsive */
+    @media (max-width:880px){.two-col{grid-template-columns:1fr}}
+
+    /* small animations */
+    .fade-in{animation:fadeIn .8s ease both}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+    /* Gallery video styles */
+.gallery video {
+  width: 95%;
+  max-width: 500px;   /* limit width on large screens */
+  height: 100px;       /* keep aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  margin: 10px;
+  object-fit: cover;  /* ensures video fills nicely */
+}
+
+.mr10{
+    margin-right: 10px !important;
+}
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  .gallery video {
+    max-width: 95%;   /* take full width */
+    height: auto;      /* maintain aspect ratio */
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="fade-in">
+      <div class="hero-left">
+        <h1>Dr. Priti Swaraj</h1>
+        <div class="roles">Archaeologist · Researcher · Author</div>
+        <p class="lead">Ph.D., Nava Nālandā Mahavihara. Specialist in Indo‑Tibetan Buddhist iconography. Researcher, conference speaker and author with multiple journal publications and curated field surveys.</p>
+        <div class="cta">
+          <a href="mailto:pritiswaraj75@gmail.com" class="btn">Email</a>
+          <a href="#contact" class="btn secondary">Contact</a>
+        </div>
+        <div style="margin-top:12px;color:#555;font-size:14px">Location: Patna, Bihar, India &nbsp; • &nbsp; Mb: +91 91022 96460 &nbsp; • &nbsp; Instagram: <a href="https://instagram.com/pritiswaraj75" target="_blank">@pritiswaraj75</a></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="card fade-in">
+        <h3>Book Publication</h3>
+        <div style="display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start">
+          <div style="flex:1;min-width:260px">
+            <h4>A History of Buddhist Iconography in Bihar</h4>
+            <p style="color:#444;line-height:1.6">
+              This book presents a comprehensive study on Buddhist iconography in Bihar, examining the rich sculptural traditions, their philosophical context, and Indo‑Tibetan connections. It draws upon field research, museum collections, and historical sources to provide insights into the evolution of Buddhist art and iconography in the region.
+            </p>
+            <ul class="clean">
+              <li><strong>First Edition: Delhi, 2025</strong></li>
+              <li><strong>Author:</strong> Dr. Priti Swaraj</li>
+              <li><strong>Publisher:</strong>Motilal Banarsidass Publishing House</li>
+              <li><strong>Publisher Details:</strong><br>
+                4637/20, F-2, Hari Sadan, First Floor, Ansari Road, Darya Ganj Delhi–110 002<br>
+                Tel.: (+91-11) 4559 7999<br>
+                1st Floor, 1/2 Rathnavilas Road, Basavanagudi, Bengaluru–560004 (India)<br>
+                Tel.: +91-80-41275911</li>
+              
+              <li><strong>ISBN:</strong> 978-93-7100-729-0 (Hardcover)</li>
+              <li><strong>ISBN:</strong> 978-93-7100-488-6 (Paperback)</li>
+            </ul>
+          </div>
+          <div style="width:240px;flex-shrink:0">
+            <img src="/book1.jpg" alt="Book cover" style="width:100%;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,0.2)">
+          </div>
+        </div>
+      </section>
+
+      <section class="two-col">
+        <div class="card fade-in">
+          <h3>About</h3>
+          <div class="meta">Education &amp; Training</div>
+          <p style="color:#444;line-height:1.6">Dr. Priti Swaraj completed M.A. in History and earned a Ph.D. from Nava Nālandā Mahavihara (Deemed University). She has taken specialist courses including Tibetan language (Tibet House, Delhi), Rock Art of Southeast Asia (SAMEO‑SPAFA, Thailand) and Introduction to Archaeology (Bihar Museum).</p>
+
+          <h4 style="margin-top:14px">Professional summary</h4>
+          <ul class="clean">
+            <li>Worked with SAMEO, SPAFA (Thailand) — semi‑governmental organization.</li>
+            <li>Published ~10 research articles in national & international journals.</li>
+            <li>Currently researching Iconography of Indo‑Tibetan Buddhist Art.</li>
+          </ul>
+
+          <h4 style="margin-top:12px">Selected academic works</h4>
+          <div class="works-grid">
+            <div class="work"><h4>Historical View of Dr. Babasaheb Ambedkar on Indian Democracy</h4><p>Research Hub Intl. (Vol‑2, 2021)</p></div>
+            <div class="work"><h4>Study of Women Aesthetic in Ajanta Paintings</h4><p>ASSR — Conference proceeding</p></div>
+            <div class="work"><h4>An Iconographical Study of Bodhisattva Avalokiteśvara</h4><p>Global Heritage Conclave‑2022</p></div>
+            <div class="work"><h4>Rock Art of Southeast Asia and the World</h4><p>SPAFA, Thailand — training & research</p></div>
+          </div>
+        </div>
+
+        <aside class="card fade-in">
+          <h3>Publications & Presentations</h3>
+          <div class="meta">Journal papers & Conference talks</div>
+          <ul class="clean">
+            <li>IJRAR — "Some Aspects of Buddhist Iconography in Bihar Museum"</li>
+            <li>"The Great Buddha at Sultanganj Tirtha" — Heritage Society Patna</li>
+            <li>Economic Value of Buddhist Statues (Gupta Period) — Bihar Itihas Parisad</li>
+            <li>Multiple conference presentations: Nagpur, Patna, Global Heritage Conclave</li>
+          </ul>
+
+          <h4 style="margin-top:12px">Organized & Lectures</h4>
+          <ul class="clean">
+            <li>Organized webinar: "Educational Institutions in Ancient Bihar" (Aug 6, 2023)</li>
+            <li>Resource person — online course "Introduction to Art and Iconography" (June 4–8, 2025)</li>
+          </ul>
+
+          <h4 style="margin-top:12px">Translations & Reviewing</h4>
+          <p style="color:#444">Working on translations of historic works and serves as peer reviewer for forthcoming SAMEO‑SPAFA publications.</p>
+        </aside>
+      </section>
+
+      <section class="card fade-in">
+        <h3>Journals & Select Papers</h3>
+        <div class="meta">Detailed list</div>
+        <ol style="color:#444;line-height:1.6">
+          <li>"Historical View of Dr. Babasaheb Ambedkar on Indian Democracy" — Research Hub Intl. (2021)</li>
+          <li>"Study of Women Aesthetics in Ajanta Paintings" — ASSR (ISBN)</li>
+          <li>"An Iconographical Study of Bodhisattva Avalokiteśvara" — Heritage Society</li>
+          <li>"Some Aspects of Buddhist Iconography In Bihar Museum" — IJRAR</li>
+          <li>"Iconographical & Philosophical Study of Sculptures in Bhagalpur Museum" — ASSR (June 2025)</li>
+        </ol>
+      </section>
+
+      <section class="card fade-in">
+        <h3>Gallery — awards, surveys & fieldwork</h3>
+        <div class="meta">Click any image to enlarge</div>
+        <div class="gallery" id="gallery">
+          <img src="/img2.jpg" alt="Book cover" data-full="/img1.jpg">
+          <img src="/img1.jpg" alt="Book cover" data-full="/img1.jpg">
+          <img src="/img4.jpg" alt="Book cover" data-full="/img1.jpg">
+          <video class="gallery-video" controls autoplay loop muted>
+            <source src="/vid1.mp4" type="video/mp4">
+          </video>
+          <video class="gallery-video m10" controls autoplay loop muted>
+            <source src="/vid2.mp4" type="video/mp4">
+          </video>
+          <img src="/img5.jpg" alt="Book cover" data-full="/img1.jpg">
+          <img src="/img7.jpg" alt="Book cover" data-full="/img1.jpg">
+          <img src="/img8.jpg" alt="Book cover" data-full="/img1.jpg">
+          <img src="/img9.jpg" alt="Book cover" data-full="/img9.jpg">
+          
+          
+        </div>
+      </section>
+
+      <section class="card fade-in" id="contact">
+        <h3>Contact</h3>
+        <p class="meta">Get in touch for research collaborations, talks, field surveys or book inquiries.</p>
+        <p style="margin:6px 0 12px;color:#444"><strong>Email:</strong> <a href="mailto:pritiswaraj75@gmail.com">pritiswaraj75@gmail.com</a><br><strong>Phone:</strong> +91 91022 96460<br><strong>Location:</strong> Patna, Bihar, India</p>
+        <form action="https://formsubmit.co/pritiswaraj75@gmail.com" method="POST" style="display:grid;gap:8px;max-width:560px">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="name" placeholder="Your name" required style="padding:10px;border-radius:8px;border:1px solid #ccc">
+          <input type="email" name="email" placeholder="Your email" required style="padding:10px;border-radius:8px;border:1px solid #ccc">
+          <textarea name="message" rows="4" placeholder="Message" required style="padding:10px;border-radius:8px;border:1px solid #ccc"></textarea>
+          <div style="display:flex;gap:8px">
+            <button type="submit" class="btn">Send</button>
+            <button type="reset" class="btn secondary">Reset</button>
+          </div>
+        </form>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>© Dr. Priti Swaraj — Archaeologist • Researcher • Author</div>
+      <div style="font-size:13px;color:#666">Designed By Leafcode Technology</div>
+    </footer>
+  </div>
+
+  <div id="modal" class="modal" onclick="closeModal(event)"><img id="modalImg" src="" alt=""/></div>
+
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
+      e.preventDefault();const target=document.querySelector(a.getAttribute('href'));
+      if(target) target.scrollIntoView({behavior:'smooth',block:'start'});
+    }));
+
+    // Gallery lightbox
+    document.querySelectorAll('.gallery img').forEach(img=>{
+      img.addEventListener('click',()=>{
+        const src = img.dataset.full || img.src; document.getElementById('modalImg').src = src; document.getElementById('modal').classList.add('open');
+      })
+    });
+    function closeModal(e){ if(e.target.id==='modal' || e.target.id==='modalImg'){ document.getElementById('modal').classList.remove('open'); document.getElementById('modalImg').src=''; }}
+  </script>
+</body>
+</html>
